@@ -527,5 +527,21 @@ header{
     margin-bottom: 20px;
 }
 
+.requirments{
+    display: flex;
+    flex-direction: column;
+}
+.requirements__cards{
+    display: flex;
+
+}
+
+.requirements__card__first {
+    border-radius: 30px;
+    padding: 30px;
+    width: 400px;
+    height: 216px;
+    box-shadow: 0 4px 20px 0 rgba(0, 46, 69, 0.1);
+}
 /*не забыть display flex end*/
 /*исправить блок investments, preferential__loan*/

@@ -307,7 +307,28 @@ header{
     position: relative;
 
 
+}
 
+.procent__pic {
+    background: url("svg/procent.png") no-repeat;
+    height: 156px;
+    width: 151px;
+    position: absolute;
+    right: 0;
+    top:-52px;
+
+}
+
+.ellipse{
+    position: absolute;
+    top: -101px;
+    right: -33px;
+    max-width: 193px;
+    width: 100%;
+    height: 193px;
+    border-radius: 100%;
+    background-color: rgba(131, 110, 203,0.8);
+    filter: blur(20px);
 }
 
 .loan__program h4{
@@ -335,15 +356,6 @@ header{
     text-align: center;
 }
 
-.procent__pic{
-    background: url("svg/procent.png") no-repeat;
-    position: absolute;
-    height: 156px;
-    width: 151px;
-    right: 0;
-    top:0;
-
-}
 
 
 .loan__footer{
@@ -417,11 +429,13 @@ header{
     padding: 60px 80px 120px 80px;
     height: 482px;
     background: 
+    url("svg/loanpic.svg")no-repeat 244px -184.57px,
     linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
     display: flex;
     flex-direction: column;
     color: #fff;
 }
+
 
 .startup__description{
     font-size: 32px;
@@ -533,15 +547,60 @@ header{
 }
 .requirements__cards{
     display: flex;
+    justify-content: space-between;
 
+}
+
+.requirements__header{
+    margin-bottom: 40px;
+}
+
+
+.requirements__card__first,
+.requirements__card__second,
+.requirements__card__third{
+    display: flex;
+    flex-direction: column;
+}
+
+.requirements__cards h5 {
+    line-height: 120%;
 }
 
 .requirements__card__first {
     border-radius: 30px;
     padding: 30px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 216px;
     box-shadow: 0 4px 20px 0 rgba(0, 46, 69, 0.1);
+    margin-bottom: 20px;
 }
+
+.requirements__card__second{
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    height: 262px;
+    box-shadow: 0 4px 20px 0 rgba(0, 46, 69, 0.1);  
+    margin-bottom: 20px;
+}
+
+.requirements__card__third{
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    height: 238px;
+    box-shadow: 0 4px 20px 0 rgba(0, 46, 69, 0.1);
+}
+
+.requirements__pics{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
 /*не забыть display flex end*/
 /*исправить блок investments, preferential__loan*/

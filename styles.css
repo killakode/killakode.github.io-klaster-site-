@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'TT Firs Neue Medium';
+    src: local('TT Firs Neue Medium'), local('TT-Firs-Neue-Medium'),
+        url('TTFirsNeue-Medium/TTFirsNeue-Medium.woff2') format('woff2'),
+        url('TTFirsNeue-Medium/TTFirsNeue-Medium.woff') format('woff'),
+        url('TTFirsNeue-Medium/TTFirsNeue-Medium.ttf') format('truetype');
+    font-style: normal;
+  }
+
+/*-------HEADER-------*/
+
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body h2{
+    font-size: 40px;
+}
+
+body h3{
+    font-size: 32px;
+}
+
+body h4{
+    font-size: 24px;
+}
+
+body h5{
+    font-size: 18px;
+}
+
+body h6{
+    font-size: 16px;
+}
+body{
+    font-family: "TT Firs Neue Medium", sans-serif;
+}
+
+.header li,
+.main__nav li{
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    max-width: 1240px;
+
+}
+
+.header__nav-left{
+    display: flex;
+    align-items: center;
+    margin-right:auto;
+
+}
+
+.header__nav-right li:not(:last-child){
+    margin-right: 70px;
+}
+
+.user__logo{
+    padding-left: 10px;
+}
+
+
+.header ul,
+.main__nav ul {
+    display: flex;
+}
+
+
+.header__nav-left li:not(:last-child)::after{
+    content: "|";
+    padding-left: 20px;
+    margin-right: 20px;
+    color: #CBCBCE;
+
+}
+
+.header__nav-right ul {
+    display: flex;
+    align-items: center;
+}
+
+.search__icon{
+    display: flex;
+}
+
+header{
+    border-bottom: 1px solid #CBCBCE;
+}
+
+.lom__wrapper{
+    border: 1px solid transparent; 
+    background: 
+    linear-gradient(#fff, #fff) padding-box, 
+    linear-gradient(to bottom right, #16FF00,#4DFFC9); 
+    border-radius: 23px; 
+    padding: 8px 13px; 
+   }
+
+
+
+/*-------------MAIN-NAVIGATION-------------*/
+
+.main__nav ul{
+    padding-top: 16px;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*------------MAIN-INVESTMENTS------------*/
+
+.investments {
+    max-width: 1400px;
+    height: 548px;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(70deg, #6F6DCA,#906DCA);
+    border-radius:0 0 40px 40px;
+    display: flex;
+    color: #fFFFFf;
+    position: relative;
+}
+
+.investments__pic{
+    background: url("svg/inv.svg") no-repeat;
+    position: absolute;
+    width: 567px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+}
+
+.investments__target,
+.investments__about,
+.credit{
+    padding-left: 80px;
+}
+
+.investments__target {
+    padding-top: 71px;
+    max-width: 170px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.investments__about{
+    font-size: 16px;
+    max-width: 550px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.about__credit,
+.credit__info {
+    width: 665px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit__numbers{
+    display: flex;
+    align-items: baseline;
+}
+
+.summ__credit,
+.loan__about,
+.term__about{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 24px;
+}
+
+.numbers{
+    font-size: 70px;
+}
+
+
+.credit__links{
+    padding-top: 40px;
+    display: flex;
+    width: 388px;
+    justify-content: space-between;
+}
+
+.consultation__button,
+.application__button{
+    padding: 8px 21px;
+    border-radius: 2px;
+}
+
+.application__button{
+    background: linear-gradient(to bottom right, #16FF00,#4DFFC9);
+
+}
+
+.consultation__button{
+    background: #ffffff;
+
+}
+
+
+
+
+
+/*-------MAIN-LOAN---------*/
+
+.all__loan{
+    padding-top: 80px;
+    margin-bottom: 10px;
+
+}
+
+.container__flex{
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.loan__description{
+    margin-bottom: 20px;
+
+}
+
+.more__about__loan{
+    max-width: 560px;
+    width: 100%;
+    margin-bottom: 31px;
+}
+
+
+.logos{
+    display: flex;
+    max-width: 579px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.msp__bank{
+    display: flex;
+    max-width: 228px;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+
+.msp__background{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #F8F8F8;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.msp__about,
+.msk__gov{
+    text-align: center;
+}
+
+.msp__logo,
+.msk__logo {
+    margin: auto;
+}
+
+.msp__about h2{
+    margin-bottom: 10px;
+}
+
+.about__program{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.loan__program{
+    max-width: 506px;
+    width: 100%;
+    height: 230px;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+
+
+
+}
+
+.loan__program h4{
+    max-width: 266px;
+
+}
+
+.loan__about__procent{
+    padding-top: 24px;
+    width: 334px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.porcent__description__next{
+    text-align: center;
+}
+
+.numbers__loan{
+    font-size: 40px;
+}
+.loan__procent__next{
+    text-align: center;
+}
+
+.procent__pic{
+    background: url("svg/procent.png") no-repeat;
+    position: absolute;
+    height: 156px;
+    width: 151px;
+    right: 0;
+    top:0;
+
+}
+
+
+.loan__footer{
+
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    height: 242px;
+    margin-bottom: 120px;
+
+}
+
+.loan__spending{
+    font-size: 32px;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.loan__spending__logos{
+    padding-top: 30px;
+    display: flex;
+    width: 1160px;
+    height: 94px;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000;
+    justify-content: space-between;
+
+}
+
+.loan__logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+
+}
+
+.loan__logos__description{
+    width: 246px;
+}
+
+.circle{
+    border-radius: 50px;
+    width: 94px;
+    height: 94px;
+    box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    display: flex;
+}
+
+.logos__loan{
+
+    width: 54px;
+    margin: auto;
+}
+
+.startup{
+    height: 686px;
+}
+
+.startup__header{
+    line-height: 110%;
+    margin-bottom: 40px;
+}
+.startup__background{
+    border-radius: 60px;
+    padding: 60px 80px 120px 80px;
+    height: 482px;
+    background: 
+    linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.startup__description{
+    font-size: 32px;
+    line-height: 120%;
+    max-width: 755px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.startup__info{
+    max-width: 612px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.startup__addition{
+    max-width: 529px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.startup__icon{
+    display: flex;
+    margin-right: 20px;
+    border-radius: 110px;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    flex: none;
+}
+
+.members{
+    height: 54px;
+    width: 54px;
+    margin: auto;
+}
+
+.more__details__button{
+    border-radius: 3px;
+    width: 201px;
+    height: 40px;
+    padding: 8px 21px;
+    background: linear-gradient(to bottom right, #16FF00, #4DFFC9);
+}
+
+.more__startup{
+    padding: 60px 100px;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+}
+
+.more__startup__info{
+    line-height: 110%;
+    margin-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first__card{
+    max-width: 370px;
+    width: 100%;
+}
+.second__card,
+.third__card{
+    max-width: 415px;
+    width: 100%;
+}
+.first__card,
+.second__card,
+.third__card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 30px;
+    height: 327px;
+    box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
+}
+
+.special {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #8d8f92;
+}
+
+.card__pic{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 60px;
+}
+
+.cards h5{
+    margin-bottom: 10px;
+}
+.first__card h4{
+    margin-bottom: 20px;
+}
+
+/*не забыть display flex end*/
+/*исправить блок investments, preferential__loan*/

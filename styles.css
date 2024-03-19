@@ -18,6 +18,7 @@
 
 body h2 {
   font-size: 40px;
+
 }
 
 body h3 {
@@ -38,6 +39,8 @@ body h6 {
 body {
   font-family: "TT Firs Neue Medium", sans-serif;
 }
+
+
 
 .header li,
 .main__nav li {
@@ -130,6 +133,7 @@ header {
   display: flex;
   color: #ffffff;
   position: relative;
+  margin-bottom: 80px;
 }
 
 .investments__description{
@@ -206,7 +210,6 @@ header {
 /*-------MAIN-LOAN---------*/
 
 .all__loan {
-  padding-top: 80px;
   margin-bottom: 10px;
 }
 
@@ -227,31 +230,34 @@ header {
   max-width: 560px;
   width: 100%;
   margin-bottom: 31px;
+  font-size: 18px;
 }
 
 .logos {
   display: flex;
+  justify-content: space-between;
   max-width: 579px;
   width: 100%;
-  justify-content: space-between;
+
 }
 
 .msp__bank {
-  display: flex;
   max-width: 228px;
+  min-height: 181px;
   width: 100%;
-  flex-direction: column;
+}
+
+.logo__container{
+  display: flex;
+  justify-content: center;
 }
 
 .msp__background {
-  margin-right: auto;
-  margin-left: auto;
   width: 100px;
   height: 100px;
   border-radius: 100px;
   background-color: #f8f8f8;
   margin-bottom: 20px;
-  text-align: center;
   display: flex;
 }
 
@@ -269,10 +275,6 @@ header {
   margin-bottom: 10px;
 }
 
-.about__program {
-  display: flex;
-  align-items: flex-end;
-}
 
 .loan,
 .loan__program {
@@ -343,7 +345,7 @@ header {
   border-radius: 30px;
   box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
   background: #fff;
-  height: 242px;
+  min-height: 242px;
   margin-bottom: 120px;
 }
 
@@ -357,8 +359,8 @@ header {
 .loan__spending__logos {
   padding-top: 30px;
   display: flex;
-  width: 1160px;
-  height: 94px;
+  max-width: 1160px;
+  min-height: 94px;
   font-size: 18px;
   line-height: 120%;
   color: #000;
@@ -369,17 +371,23 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 360px;
+  max-width: 360px;
+  gap: 20px;
 }
 
-.loan__logos__description {
-  width: 246px;
+
+
+.logos__description{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
 }
 
 .circle {
   border-radius: 50px;
-  width: 94px;
-  height: 94px;
+  max-width: 94px;
+  width: 100%;
+  min-height: 94px;
   box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
   background: #fff;
   display: flex;
@@ -391,17 +399,17 @@ header {
 }
 
 .startup {
-  height: 686px;
+  min-height: 686px;
 }
 
-.startup__header {
+.header__info {
   line-height: 110%;
   margin-bottom: 40px;
 }
 .startup__background {
   border-radius: 60px;
   padding: 60px 80px 120px 80px;
-  height: 482px;
+  min-height: 482px;
   background: url("svg/loanpic.svg") no-repeat 244px -184.57px,
     linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
   display: flex;
@@ -410,12 +418,20 @@ header {
 }
 
 .startup__description {
-  font-size: 32px;
-  line-height: 120%;
   max-width: 755px;
+  height: 76px;
   width: 100%;
   margin-bottom: 20px;
 }
+
+.description__info{
+  max-width: 612px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
 .startup__info {
   max-width: 612px;
   width: 100%;
@@ -428,6 +444,10 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;  
+  line-height: 140%;
+
 }
 
 .startup__icon {
@@ -447,7 +467,7 @@ header {
   margin: auto;
 }
 
-.more__details__button {
+.klaster__button {
   border-radius: 3px;
   width: 201px;
   height: 40px;
@@ -456,16 +476,11 @@ header {
 }
 
 .more__startup {
-  padding: 60px 100px;
-  height: 575px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 
-.more__startup__info {
-  line-height: 110%;
-  margin-bottom: 40px;
-}
 
 .cards {
   display: flex;
@@ -476,20 +491,32 @@ header {
   max-width: 370px;
   width: 100%;
 }
-.second__card,
-.third__card {
+
+.big {
   max-width: 415px;
   width: 100%;
 }
-.first__card,
-.second__card,
-.third__card {
+.small {
+  max-width: 370px;
+  width: 100%;
+}
+.card {
   display: flex;
   flex-direction: column;
   border-radius: 30px;
   padding: 30px;
-  height: 327px;
   box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card__description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.small h4{
+  margin-bottom: 20px;
 }
 
 .special {
@@ -500,17 +527,11 @@ header {
 }
 
 .card__pic {
-  height: 70px;
   width: 70px;
   margin-bottom: 60px;
 }
 
-.cards h5 {
-  margin-bottom: 10px;
-}
-.first__card h4 {
-  margin-bottom: 20px;
-}
+
 
 .requirments {
   display: flex;
@@ -519,66 +540,49 @@ header {
 .requirements__cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
 }
 
-.requirements__header {
-  margin-bottom: 40px;
-}
 
-.requirements__card__first,
-.requirements__card__second,
-.requirements__card__third {
-  display: flex;
-  flex-direction: column;
-}
 
 .requirements__cards h5 {
   line-height: 120%;
 }
 
-.requirements__card__first {
+.first__floor{
+  min-height: 216px;
+}
+
+.second__floor{
+  min-height: 262px;
+}
+
+.third__floor{
+  min-height: 238px;  
+}
+
+.requirements__card  {
   border-radius: 30px;
   padding: 30px;
   max-width: 400px;
   width: 100%;
-  height: 216px;
   box-shadow: 0 4px 20px 0 rgba(0, 46, 69, 0.1);
   margin-bottom: 20px;
 }
 
-.requirements__card__second {
-  border-radius: 30px;
-  padding: 30px;
-  max-width: 400px;
-  width: 100%;
-  height: 262px;
-  box-shadow: 0 4px 20px 0 rgba(0, 46, 69, 0.1);
-  margin-bottom: 20px;
-}
-
-.requirements__card__third {
-  border-radius: 30px;
-  padding: 30px;
-  max-width: 400px;
-  width: 100%;
-  height: 238px;
-  box-shadow: 0 4px 20px 0 rgba(0, 46, 69, 0.1);
-  margin-bottom: 140px;
-}
 
 .requirements__pics {
   height: 70px;
   width: 70px;
   margin-bottom: 20px;
 }
-.selection__container {
+.selection{
   max-width: 1240px;
-  height: 988px;
+  min-height: 988px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .selection__header {
@@ -587,15 +591,31 @@ header {
   margin-bottom: 40px;
 }
 
+.stages{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.selection__container{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
 .msc__klaster {
   border-radius: 60px;
   padding: 40px 50px 40px 40px;
-  height: 396px;
   background: url("svg/klasterback.svg") no-repeat 425px -62.27px;
   background-color: #d8fddb;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.msp__klaster {
+  border-radius: 30px;
+  background: url("svg/mspback.svg") no-repeat 374px -98px;
+  background-color: #bee7ff;
+  padding: 40px 60px 40px 40px;
 }
 
 .msc__pic {
@@ -608,30 +628,17 @@ header {
 
 .msc__header {
   margin-bottom: 156px;
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
-.selection__number {
-  border: 1px solid #16ff00;
-  border-radius: 50px;
-  padding: 12px 24px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
-  text-align: center;
-  margin-right: 21px;
+.header__text{
+  max-width: 336px;
 }
 
-.msp__klaster {
-  border-radius: 30px;
-  height: 304px;
-  background: url("svg/mspback.svg") no-repeat 374px -98px;
-  background-color: #bee7ff;
-  padding: 40px 60px 40px 40px;
-  justify-content: space-between;
-  display: flex;
-}
+
+
 
 .msp__header {
   margin-bottom: 64px;
@@ -651,9 +658,6 @@ header {
   align-items: center;
 }
 
-.last {
-  height: 80px;
-}
 
 .list__item__checkmark {
   margin-right: 20px;
@@ -663,25 +667,33 @@ header {
   margin-bottom: 10px;
 }
 
-.msk__right {
-  padding-top: 14px;
-}
-
 .klaster__logo {
   width: 60px;
   height: 37px;
   margin: auto;
 }
 
-.selection__number__second {
-  border: 1px solid #73b2d8;
+.selection__number{
+  font-size: 36px;
   border-radius: 50px;
-  padding: 10px 20px;
   width: 60px;
   height: 60px;
   box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
   text-align: center;
   margin-right: 21px;
+  padding: auto;
+
+}
+
+.first__number {
+  border: 1px solid #16ff00;
+  padding-top: 6px;
+
+}
+
+.second__number {
+  border: 1px solid #73b2d8;
+  padding-top: 5px;
 }
 
 .get__loan__description {
@@ -693,6 +705,9 @@ header {
   height: 353px;
   justify-content: space-between;
 }
+
+
+
 .get__loan__card {
   display: flex;
   flex-direction: column;
@@ -708,6 +723,22 @@ header {
   height: 60px;
   display: flex;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.card__number ::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 350px;
+  border-top: 1px dotted black;
+  z-index: -1; /* чтобы линия была под содержимым контейнера */
+}
+
+.last__number:not(:last-child) ::before{
+  content: none;
 }
 
 .card__number h2 {

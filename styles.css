@@ -694,6 +694,7 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 280px;
+  height: 353px;
   width: 100%;
   margin-bottom: 60px;
 }
@@ -703,6 +704,7 @@ header {
   width: 60px;
   height: 60px;
   display: flex;
+  margin-bottom: 20px;
 }
 
 .card__number h2 {

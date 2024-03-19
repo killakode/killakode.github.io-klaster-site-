@@ -92,21 +92,28 @@ body {
 
 header {
   border-bottom: 1px solid #cbcbce;
+  margin-bottom: 16px;
 }
 
 .lom__wrapper {
   border: 1px solid transparent;
   background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(to bottom right, #16ff00, #4dffc9);
+  linear-gradient(to bottom right, #16ff00, #4dffc9);
   border-radius: 23px;
   padding: 8px 13px;
 }
 
 /*-------------MAIN-NAVIGATION-------------*/
 
-.main__nav ul {
-  padding-top: 16px;
+.main__nav{
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
   margin-bottom: 16px;
+
+}
+
+.main__nav ul {
   justify-content: space-between;
   align-items: center;
 }
@@ -115,7 +122,7 @@ header {
 
 .investments {
   max-width: 1400px;
-  height: 548px;
+  min-height: 548px;
   margin-right: auto;
   margin-left: auto;
   background: linear-gradient(70deg, #6f6dca, #906dca);
@@ -123,6 +130,11 @@ header {
   display: flex;
   color: #ffffff;
   position: relative;
+}
+
+.investments__description{
+  padding-top: 71px;
+  padding-left: 80px;
 }
 
 .investments__pic {
@@ -134,31 +146,21 @@ header {
   right: 0;
 }
 
-.investments__target,
-.investments__about,
-.credit {
-  padding-left: 80px;
-}
 
 .investments__target {
-  padding-top: 71px;
-  max-width: 170px;
-  font-size: 40px;
+  max-width: 755px;
   margin-bottom: 10px;
 }
 
 .investments__about {
-  font-size: 16px;
-  max-width: 550px;
-  display: flex;
+  max-width: 612px;
   margin-bottom: 40px;
 }
 
-.about__credit,
 .credit__info {
-  width: 665px;
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 40px;
 }
 
 .credit__numbers {
@@ -172,7 +174,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  font-size: 24px;
 }
 
 .numbers {
@@ -180,10 +181,12 @@ header {
 }
 
 .credit__links {
-  padding-top: 40px;
   display: flex;
-  width: 388px;
-  justify-content: space-between;
+  gap: 10px;
+}
+
+.credits__info{
+  font-size: 24px;
 }
 
 .consultation__button,

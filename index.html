@@ -75,9 +75,7 @@
         <!-- Инвестиции  -->
         <section class="investments">
           <div class="investments__description">
-            <div class="investments__target">
-              <h2>Льготные&nbsp;кредит на&nbsp;инвестиционные&nbsp;цели</h2>
-            </div>
+              <h2 class="investments__header">Льготные&nbsp;кредит на&nbsp;инвестиционные&nbsp;цели</h2>
             <div class="investments__about"> Совместная&nbsp;программа&nbsp;Правительства&nbsp;Москвы&nbsp;и&nbsp;Корпорации МСП&nbsp;для&nbsp;компаний, реализующих&nbsp;инвестиционные&nbsp;проекты в сферах науки, промышленности и ИТ </div>
             <div class="credit">
               <div class="credit__info">
@@ -120,22 +118,18 @@
               <div class="more__about__loan">—это мера финансовой поддержки, реализуемая Правительством Москвы совместно с Корпорацией МСП. </div>
               <div class="logos">
                 <div class="msp__bank">
-                  <div class="logo__container">
                     <div class="msp__background">
                       <img src="svg/msplogo.svg" alt="" class="msp__logo">
                     </div>
-                  </div>
                   <div class="msp__about">
                     <h4>МСП Банк</h4>
                     <div class="logos__description"> выдает заемные средства </div>
                   </div>
                 </div>
                 <div class="msk__gov">
-                  <div class="logo__container">
                     <div class="msp__background">
                       <img src="svg/msklogo.svg" alt="" class="msk__logo">
                     </div>
-                  </div>
                   <div class="msp__about">
                     <h4>Правительство Москвы</h4>
                     <div class="logos__description"> субсидирует ставку по кредиту </div>
@@ -193,16 +187,17 @@
           <div class="container">
             <h2 class="header__info"> Кто может получить кредит на льготных условиях </h2>
             <div class="startup__background">
-              <div class="startup__description">
-                <h3>Компании из Реестра стартапов и&nbsp;технологических компаний</h3>
-              </div>
+                <h3 class="startup__description">Компании из Реестра стартапов и&nbsp;технологических компаний</h3>
               <div class="description__info"> В столице появился Реестр стартапов и технологических компаний. Её&nbsp;участниками могут стать московские инновационные компании. Они&nbsp;получают&nbsp;упрощённый доступ к мерам поддержки от города. </div>
               <div class="startup__addition">
                 <div class="startup__icon">
                   <img src="svg/users.svg" alt="" class="members">
                 </div> Все участники Реестра могут получить льготный кредит&nbsp;в&nbsp;не&nbsp;зависимости от сферы деятельности при соответствии&nbsp;основным&nbsp;требованиям для заемщиков
               </div>
-              <button class="button klaster__button">Подробнее о Реесте</button>
+              <div class="button">
+                <button class="klaster__button">Подробнее о Реесте</button>
+              </div>
+
             </div>
           </div>
         </section>
@@ -276,11 +271,10 @@
               <h2>Отбор заявок на получение льготного&nbsp;инвестиционного&nbsp;кредита</h2>
               <div class="lom__wrapper stages">проходит&nbsp;в&nbsp;2&nbsp;этапа</div>
             </div>
-            <div class="selection__main">
               <div class="selection__container msc__klaster">
                 <div class="msc__left">
                   <div class="msc__header">
-                    <h4 class="selection__number first__number">1</h4>
+                    <div class="selection__number first__number">1</div>
                     <div class="header__text"><h4>В Московском инновационном&nbsp;кластере</h4></div>
                   </div>
                   <div class="msc__pic">
@@ -297,7 +291,7 @@
                       <img src="svg/checkmark.svg" class="list__item__checkmark" alt="">
                       <h5>Подтверждаете вид деятельности: наука,&nbsp;ИТ&nbsp;или&nbsp;промышленность</h5>
                     </div>
-                    <div class="list__item last">
+                    <div class="list__item">
                       <img src="svg/checkmark.svg" class="list__item__checkmark" alt="">
                       <h5>Реализация проекта на территории Москвы</h5>
                     </div>
@@ -307,7 +301,7 @@
               <div class="selection__container msp__klaster">
                 <div class="msc__left">
                   <div class="msp__header">
-                    <h4 class="selection__number second__number">2</h4>
+                    <div class="selection__number second__number">2</div>
                     <h4>В МСП Банке</h4>
                   </div>
                   <div class="msc__pic">
@@ -328,7 +322,7 @@
                 </div>
               </div>
         </section>
-        <section>
+        <section class="loan__section">
           <div class="container">
             <h2 class="get__loan__description">Как получить льготный кредит</h2>
             <div class="get__loan">
@@ -400,10 +394,10 @@
                 </div>
                 <div class="footer__contacts">
                     <a href="#" class="number__footer"><img src="svg/tellogo.svg" alt="">
-                    <h6>8 495 870-45-55</h6></a>
+                    <div class="contatcs">8 495 870-45-55</div></a>
                     <a href="#" class="mail__footer">
                       <img src="svg/maillogo.svg" alt="" class="footer__logo__mail">
-                    <h6>support@i.moscow</h6>
+                    <div class="contatcs">support@i.moscow</div>
                     </a>
                   <div class="footer__btn">
                     <button class="button support__button"> Служба поддержки

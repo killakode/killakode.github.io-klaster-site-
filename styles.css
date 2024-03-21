@@ -677,6 +677,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px;
+;
 }
 
 
@@ -686,6 +687,8 @@ header {
   flex-direction: column;
   max-width: 280px;
   width: 100%;
+  position: relative;
+
 }
 
 .card__number {
@@ -695,21 +698,21 @@ header {
   height: 60px;
   display: flex;
   margin-bottom: 20px;
-  position: relative;
+
 }
 
-.card__number ::before {
+
+.get__loan__card::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 31px;
   left: 0;
-  right: 0;
-  width: 25vw;
+  right: -40px;
   border-top: 1px dotted black;
   z-index: -1;
 }
 
-.last__number:not(:last-child) ::before{
+.get__loan__card:last-child::before{
   content: none;
 }
 
@@ -734,8 +737,6 @@ header {
   border-radius: 20px;
   background: url("svg/questionsback.svg") no-repeat;
   padding: 40px 60px 50px 60px;
-  display: flex;
-  flex-direction: column;
   color: #fff;
 }
 

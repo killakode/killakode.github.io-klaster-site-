@@ -702,8 +702,9 @@ header {
 
 .get__loan {
   display: flex;
-  height: 353px;
+  min-height: 353px;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 
@@ -714,8 +715,8 @@ header {
   max-width: 280px;
   height: 353px;
   width: 100%;
-  margin-bottom: 60px;
 }
+
 .card__number {
   border-radius: 100%;
   background: #16ff00;
@@ -737,21 +738,24 @@ header {
   z-index: -1; /* чтобы линия была под содержимым контейнера */
 }
 
+.loan__number{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 110%;
+  margin: auto;
+}
+
 .last__number:not(:last-child) ::before{
   content: none;
 }
 
-.card__number h2 {
-  margin: auto;
-}
-
-.card__description__first {
-  max-width: 255px;
-  width: 100%;
+.loan__card__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 .questions {
-  padding: 60px 100px 100px 100px;
   margin-bottom: 70px;
 }
 
@@ -778,8 +782,6 @@ header {
 }
 
 .question__number {
-  display: flex;
-  flex-direction: column;
   margin-right: 60px;
 }
 
@@ -813,8 +815,17 @@ header {
   width: 100%;
 }
 
+
 .logo__footer {
   margin-bottom: 60px;
+}
+
+.number__footer{
+  gap: 10px;
+}
+
+.mail__footer{
+  gap: 9px;
 }
 
 .number__footer,
@@ -823,13 +834,7 @@ header {
   align-items: center;
 }
 
-.footer__logo__tell {
-  margin-right: 9px;
-}
 
-.footer__logo__mail {
-  margin-right: 10px;
-}
 
 .social__icons {
   margin-bottom: 50px;
@@ -851,6 +856,11 @@ header {
   height: 40px;
   box-shadow: 0 4px 20px 0 rgba(0, 46, 69, 0.1);
   background: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #1c1d22;
 }
 
 .footer__block {
@@ -864,11 +874,20 @@ header {
   margin-bottom: 30px;
 }
 
-.footer__block h6:not(:last-child) {
+.footer__block a:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.business__list__second {
+.business__list{
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1c1d22;
+}
+
+.second__list{
   padding-top: 52px;
 }
 
@@ -876,20 +895,20 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 86px;
+
 }
 
 .agreement {
-  display: flex;
-  height: 73px;
-  align-items: center;
   border-top: 1px solid #cbcbce;
-}
-
-.agreement {
+  min-height: 73px;
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
   color: #a1a3a6;
+
 }
+
 /*не забыть display flex end*/
 /*исправить блок investments, preferential__loan*/

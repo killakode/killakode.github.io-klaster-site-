@@ -733,10 +733,15 @@ header {
   top: 50%;
   left: 0;
   right: 0;
-  width: 350px;
+  width: 25vw;
   border-top: 1px dotted black;
-  z-index: -1; /* чтобы линия была под содержимым контейнера */
+  z-index: -1;
 }
+
+.last__number:not(:last-child) ::before{
+  content: none;
+}
+
 
 .loan__number{
   font-weight: 500;
@@ -744,11 +749,6 @@ header {
   line-height: 110%;
   margin: auto;
 }
-
-.last__number:not(:last-child) ::before{
-  content: none;
-}
-
 .loan__card__description {
   font-weight: 400;
   font-size: 16px;

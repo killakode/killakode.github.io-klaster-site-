@@ -8,12 +8,7 @@
 }
 
 /*-------HEADER-------*/
-
-
-
-
-
-
+  
 
 body h2 {
   font-size: 40px;
@@ -149,6 +144,7 @@ header {
   color: #ffffff;
   position: relative;
   margin-bottom: 80px;
+  overflow: hidden;
 }
 
 .investments__header {
@@ -259,12 +255,10 @@ header {
 }
 
 .msp__bank {
-  max-width: 228px;
+  max-width: 268px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
 }
 
 
@@ -273,7 +267,6 @@ header {
   height: 100px;
   border-radius: 100px;
   background-color: #f8f8f8;
-  margin-bottom: 20px;
   display: flex;
 }
 
@@ -282,12 +275,6 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.msp__about,
-.msk__gov {
-  text-align: center;
 }
 
 .msp__logo,
@@ -358,8 +345,14 @@ header {
 .numbers__loan {
   font-size: 40px;
 }
-.loan__procent__next {
-  text-align: center;
+
+.number{
+  display: flex;
+  align-items: baseline;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 2px;
 }
 
 .loan__footer {
@@ -396,7 +389,13 @@ header {
   gap: 20px;
 }
 
+.first__list{
+  max-width: 560px;
+}
 
+.msp__list{
+  max-width: 550px;
+}
 
 .logos__description{
   font-weight: 400;
@@ -630,7 +629,6 @@ header {
 
 .msc__header {
   margin-bottom: 156px;
-  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -639,7 +637,9 @@ header {
   max-width: 336px;
 }
 
-
+.msp__about h5{
+  margin-bottom: 10px;
+}
 
 
 .msp__header {
@@ -651,7 +651,6 @@ header {
 .list__item {
   border-radius: 20px;
   padding: 25px 30px;
-  max-width: 560px;
   width: 100%;
   box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
   background: #fff;
@@ -909,6 +908,45 @@ header {
   justify-content: space-between;
 }
 
+
+.msp__logos{
+  display: flex;
+  max-width: 180px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.left__logo{
+  position: relative;
+}
+
+
+
+.corp__logo{
+  margin: auto;
+}
+
+.right__logo{
+  position: absolute;
+  left: 180px;
+  z-index: -1;
+}
+
+  .msc__back {
+    margin-bottom: 10px;
+  }
+
+  .cards__header{
+    margin-bottom: 10px;
+  }
+
+/*----------------------------Adaptive tablet ----------------------------*/
+
+
+
+
+
 @media screen and (min-width:768px) and (max-width:1023px) {
 
   .container__flex{
@@ -1049,12 +1087,16 @@ header {
   .msk__gov{
     flex-direction: row;
     max-width: 389px;
+    margin-bottom: 20px;
   }
 
   .loan__about__procent{
-    max-width: 232px;
+    width: 232px;
   }
 
+  .msc__back {
+    margin-right: 20px;
+  }
   .loan__footer{
     padding: 40px 30px;
   }
@@ -1203,18 +1245,14 @@ header {
     height: 23px;
   }
 
-  .list__item{
-    max-width: 100%;
+  .selection__container{
+    align-items: normal;
   }
 
   .msp__header{
     margin-bottom: 20px;
   }
 
-  .msp__logo{
-    width: 35.5px;
-    height: 24px;
-  }
 
   .selection__header h2{
     font-size: 24px;
@@ -1312,4 +1350,70 @@ header {
     padding-left: 16px;
   }
 
+  .get__loan__card::before {
+    content: '';
+    position: absolute;
+    top: 31px;
+    left: 20px;
+    bottom: -40px;
+    right: auto;
+    border-right: 1px dotted black;
+    z-index: -1;
+  }
+
+  .investments__pic {
+    background-size: contain;
+    width: 607px;
+    height: 665px;
+    bottom: -200px;
+    right: -136px;
+  }
+
+  .loan{
+    max-width: 286px;
+  }
+
+  .procent__pic {
+    background: url("svg/procent.png") no-repeat;
+    height: 85px;
+    width: 82px;
+    background-size: contain;
+    right: 12px;
+    top: -30px;
+  }
+
+  .loan__program h4{
+    max-width: 194px;
+  }
+
+  .ellipse {
+    top: -111px;
+    right: -96.5px;
+  }
+
+  .list__item{
+    max-width: 100%;
+  }
+
+  .right__logo{
+  position: absolute;
+  left: 108px;
+  z-index: -1;
+  }
+
+  .footer__cards{
+    margin-bottom: 60px;
+  }
+
+  .msp__logos{
+    margin-right: 20px;
+  }
+
+  .msp__bank, .msk__gov{
+    align-items: center;
+  }
+
+  .small, .big{
+    max-width: 100%;
+  }
 }

@@ -1417,3 +1417,49 @@ header {
     max-width: 100%;
   }
 }
+
+@media screen and (min-width:320px) and (max-width:767px){
+  
+  body h2{
+    font-size: 20px;
+  }
+
+  .header {
+    padding: 8px 20px;
+  }
+
+  .investments{
+    padding: 40px 20px;
+  }
+
+  .investments__about{
+    font-size: 14px;
+  }
+
+  .credit__info{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .investments__description{
+    z-index: 1;
+  }
+
+  .investments__pic {
+      background: url("svg/inv.svg") no-repeat;
+      position: absolute;
+      background-size: contain;
+      width: 259px;
+      height: 279px;
+      bottom: 0;
+      right: -96px;
+  }
+
+  .investments__header{
+    max-width: 282px;
+  }
+
+  .investments__about{
+    max-width: 281px;
+  }
+}

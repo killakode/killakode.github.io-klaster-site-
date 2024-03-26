@@ -1285,6 +1285,7 @@ header {
   .business__block{
     display: flex;
     flex-direction: column;
+    max-width: 224px;
   }
 
   .footer__block h5{

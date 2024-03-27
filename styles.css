@@ -949,6 +949,7 @@ header {
     margin-right: 20px;
   }
 
+
 /*----------------------------Adaptive tablet ----------------------------*/
 
 
@@ -1940,6 +1941,18 @@ header {
 
   .agreement{
     padding: 11px 19.5px 14px 19.5px;
+  }
+
+  .slick-track{
+    display: flex;
+  }
+
+  .requirements__cards{
+    min-width: 0;
+  }
+
+  .slick-list{
+    overflow: hidden;
   }
 
 }

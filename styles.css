@@ -405,7 +405,8 @@ header {
 
 .circle {
   border-radius: 50px;
-  min-width: 94px;
+  max-width: 94px;
+  width: 100%;
   height: 94px;
   box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
   background: #fff;
@@ -941,6 +942,13 @@ header {
     margin-bottom: 10px;
   }
 
+  .logo{
+    background: url("svg/logo.svg") no-repeat;
+    width: 179px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
 /*----------------------------Adaptive tablet ----------------------------*/
 
 
@@ -948,6 +956,14 @@ header {
 
 
 @media screen and (min-width:768px) and (max-width:1023px) {
+
+   .logo{
+    background: url("svg/logo.svg") no-repeat;
+    width: 140px;
+    height: 32px;
+    margin-right: 6px;
+    background-size: contain;
+  }
 
   .container__flex{
     margin-bottom: 40px;
@@ -980,11 +996,6 @@ header {
 
   .user__text{
     display: none;
-  }
-
-  .logo{
-    max-width: 140px;
-    width: 100%;
   }
 
   .user__logo{
@@ -1273,11 +1284,13 @@ header {
 
   }
 
-  .loan__card__header{
+  .get__loan__info{
     display: flex;
-    max-width: 250px;
   }
 
+  .get__loan__info h4 {
+    max-width: 180px;
+  }
   .get__loan{
     flex-direction: column;
     gap: 34px;
@@ -1407,6 +1420,7 @@ header {
 
   .msp__logos{
     margin-right: 20px;
+    margin-bottom: 0;
   }
 
   .msp__bank, .msk__gov{
@@ -1416,6 +1430,8 @@ header {
   .small, .big{
     max-width: 100%;
   }
+
+
 }
 
 @media screen and (min-width:320px) and (max-width:767px){
@@ -1424,16 +1440,32 @@ header {
     font-size: 20px;
   }
 
+  body h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+  }
+
+  header{
+    margin-bottom: 0;
+  }
+
   .header {
     padding: 8px 20px;
   }
 
+  .main__nav{
+    display: none;
+  }
+
   .investments{
     padding: 40px 20px;
+    margin-bottom: 0;
   }
 
   .investments__about{
     font-size: 14px;
+    max-width: 281px;
   }
 
   .credit__info{
@@ -1451,7 +1483,7 @@ header {
       background-size: contain;
       width: 259px;
       height: 279px;
-      bottom: 0;
+      bottom: 32px;
       right: -96px;
   }
 
@@ -1459,7 +1491,455 @@ header {
     max-width: 282px;
   }
 
-  .investments__about{
-    max-width: 281px;
+  .credit__links{
+    flex-direction: column;
   }
+
+  .numbers{
+    font-size: 30px;
+  }
+
+  .logo{
+    background: url("svg/klasterlogo.svg") no-repeat;
+    width: 34px;
+    height: 22px;
+    background-size: contain;
+  }
+
+  .header__nav-right::after{
+    content: attr(href);
+    background: url("svg/headermenu.svg") no-repeat;
+    margin-left: 10px;
+    width: 16px;
+    height: 12px;
+  }
+
+  .header__nav-left ul {
+    display: none;
+  }
+
+  .header__nav-right li:not(:last-child){
+    display: none;
+  }
+
+  .user__text{
+    display: none;
+  }
+
+  .user__logo{
+    padding-left: 0;
+    width: 19px;
+    height: 17px;
+  }
+
+  .header__nav-right{
+    display: flex;
+    align-items: center;
+  }
+
+  .preferential__loan{
+    padding: 40px 20px 0 20px;
+  }
+
+  .more__about__loan{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .container__flex{
+    display: inline;
+  }
+
+  .logos{
+    display: inline;
+  }
+
+  .msp__logo{
+    width: 30.5px;
+  }
+
+  .corp__logo{
+    width: 23px;
+  }
+  .right__logo{
+    left: 0;
+    top: 39px;
+  }
+  .msp__bank{
+    flex-direction: row;
+    margin-bottom: 20px;
+    min-height: 85px;
+  }
+
+  .msp__logos{
+    display: inline;
+    position: relative;
+    max-width: 46px;
+    margin-bottom: 0;
+  }
+
+  .msp__background{
+    height: 42px;
+    width: 42px;
+  }
+
+  .logos__description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .msk__gov{
+    flex-direction: row;
+  }
+
+  .msk__logo{
+    width: 19.78px;
+  }
+
+  .all__loan{
+    margin-bottom: 40px;
+  }
+
+  .loan__program{
+    padding: 30px 41px 32px 20px;
+  }
+
+  .loan__about__procent{
+    padding-top: 0;
+    max-width: 219px;
+  }
+
+
+  .loan,
+  .loan__program{
+    height: 193px;
+  }
+
+  .loan {
+    margin-bottom: 20px;
+  }
+
+
+  .loan__program h4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    margin-bottom: 20px;
+  }
+
+  .procent__pic{
+    width: 102px;
+    height: 107px;
+    background-size: contain;
+  }
+
+  .loan__footer{
+    padding: 30px 20px;
+  }
+
+  .loan__footer h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    margin-bottom: 20px;
+  }
+
+  .loan__spending__logos{
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .circle{
+    max-width: 60px;
+    height: 60px;
+  }
+
+  .logos__loan{
+    width: 34.47px;
+  }
+
+  .preferential__loan{
+    margin-bottom: 30px;
+  }
+
+  .startup{
+    padding: 30px 20px 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .startup__background{
+    padding: 30px 20px 40px 20px;
+     border-radius: 30px;
+  }
+
+  .startup__description{
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+  }
+
+  .header__info{
+    margin-bottom: 20px;
+  }
+
+  .description__info{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 30px;
+  }
+
+  .startup__icon{
+    width: 60px;
+    height: 60px  ;
+  }
+
+  .members{
+    width: 42px;
+    height: 42px;
+  }
+
+  .startup__addition{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    align-items: normal;
+    margin-bottom: 208px;
+  }
+
+  .klaster__button{
+    width: 100%;
+  }
+
+  .more__startup{
+    padding: 30px 20px 0 20px;
+    margin-bottom: 46px;
+  }
+
+  .cards{
+    flex-direction: column;
+  }
+
+  .card{
+    padding: 24px 20px;
+  }
+
+  .card__pic{
+    width: 52px;
+    margin-bottom: 16px;
+  }
+
+  .cards__header{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .small h4{
+    margin-bottom: 16px;
+  }
+
+  .special{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .selection{
+    padding-top: 20px;
+  }
+
+  .selection__header{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .lom__wrapper {
+    border: 1px solid transparent;
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to bottom right, #16ff00, #4dffc9);
+    border-radius: 70px;
+    padding: 6px 13px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+  }
+
+  .msc__klaster{
+    padding: 30px 20px 20px 20px;
+    border-radius: 30px;
+    flex-direction: column;
+  }
+
+  .header__text {
+    max-width: 229px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+  }
+
+  .selection__number{
+    width: 43px;
+    height: 43px;
+  }
+
+  .msc__header,
+  .msp__header{
+    margin-bottom: 20px;
+  }
+
+  .msc__pic {
+    display: none;
+  }
+
+  .list__item{
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .msp__klaster{
+    flex-direction: column;
+    padding: 30px 20px 20px 20px;
+    align-items: flex-start;
+  }
+
+  .msp__header h4{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+  }
+
+  .selection{
+    min-height: 473px;
+    margin-bottom: 20px;
+  }
+
+  .loan__section{
+    padding: 30px 20px 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .get__loan{
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .get__loan__card{
+    flex-direction: row;
+  }
+
+  .get__loan__info h4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    margin-bottom: 4px;
+  }
+
+  .card__number{
+    max-width: 30px;
+    width: 100%;
+    height: 30px;  
+    margin-right: 16px;
+  }
+
+  .loan__card__description{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .get__loan__description{
+    margin-bottom: 20px;
+  }
+
+
+  .get__loan__card::before {
+    content: '';
+    position: absolute;
+    top: 31px;
+    left: 15px;
+    bottom: -40px;
+    right: auto;
+    border-right: 1px dotted black;
+    z-index: -1;
+  }
+
+  .loan__number{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .questions__back{
+    padding: 30px 20px 40px 20px;
+  }
+
+  .question__footer{
+    flex-direction: column;
+  }
+
+  .gradient{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+  }
+
+  .question__header{
+    margin-bottom: 30px;
+  }
+
+  .question__number h6,
+  .question__mail h6{
+    margin-bottom: 2px;
+  }
+
+  .question__number div {
+    margin-bottom: 10px;
+  }
+
+  .questions{
+    margin-bottom: 60px;
+  }
+
+  .business__block,
+  .footer__block{
+    display: none;
+  }
+
+
+  .footer__cards{
+    justify-content: center;
+  }
+
+  .footer__contacts{
+    align-items: center;
+  }
+
+  .support__button{
+    width: 280px;
+  }
+
+  .social__icons{
+    display: flex;
+    gap: 9px;
+    margin-bottom: 20px;
+  }
+
+  .logo__footer{
+    margin-bottom: 30px;
+  }
+
+  .footer__cards{
+    margin-bottom: 40px;
+  }
+
+  .agreement{
+    padding: 11px 19.5px 14px 19.5px;
+  }
+
 }

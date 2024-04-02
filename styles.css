@@ -288,16 +288,13 @@ header {
 .loan,
 .loan__program {
   max-width: 506px;
-  width: 100%;
-  height: 230px;
   position: relative;
 }
 
 .loan__program {
   background-color: #f8f8f8;
   border-radius: 20px;
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -581,7 +578,6 @@ header {
 }
 .selection{
   max-width: 1240px;
-  min-height: 988px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -634,10 +630,6 @@ header {
   align-items: center;
 }
 
-.header__text{
-  max-width: 336px;
-}
-
 .msp__about h5{
   margin-bottom: 10px;
 }
@@ -677,7 +669,8 @@ header {
 .selection__number{
   font-size: 36px;
   border-radius: 50px;
-  width: 60px;
+  max-width: 60px;
+  width: 100%;
   height: 60px;
   box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.08);
   border: 1px solid #16ff00;
@@ -755,7 +748,7 @@ header {
 
 .questions__back {
   border-radius: 20px;
-  background: url("svg/questionsback.svg") no-repeat;
+  background: #383B4A url("svg/questionsback.svg") no-repeat;
   padding: 40px 60px 50px 60px;
   color: #fff;
 }
@@ -915,10 +908,6 @@ header {
   max-width: 180px;
   width: 100%;
   margin-bottom: 10px;
-}
-
-
-.left__logo{
   position: relative;
 }
 
@@ -930,7 +919,7 @@ header {
 
 .right__logo{
   position: absolute;
-  left: 180px;
+  left: 92px;
   z-index: -1;
 }
 
@@ -956,7 +945,7 @@ header {
 
 
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:768px) and (max-width:990px) {
 
    .logo{
     background: url("svg/logo.svg") no-repeat;
@@ -988,7 +977,7 @@ header {
   }
 
   .header__nav-right li:not(:last-child){
-    margin-right: 123px;
+    margin-right: 103px;
   }
 
   .header li, .main__nav li{
@@ -1014,18 +1003,16 @@ header {
     padding: 0 32px;
     overflow-x: scroll;
     white-space: nowrap; 
-
   }
 
   .main__nav ul{
     gap: 20px;
-    max-width: 678px;
-    width: 100%;
+    width: 95%;
     overflow: auto;
   }
 
   .investments {
-    max-width: 768px;
+    max-width: 990px;
     padding: 40px 76px 82px 32px;
     margin-right: auto;
     margin-left: auto;
@@ -1124,7 +1111,7 @@ header {
   }
 
   .circle{
-    min-width: 60px;
+    width: 60px;
     height: 60px;
   }
 
@@ -1141,12 +1128,13 @@ header {
     margin-bottom: 40px;
   }
 
-  .startup__background{
+ .startup__background {
     padding: 40px 80px 60px 40px;
-    border-radius:30px;
-    background: url("svg/loanpic.svg") no-repeat -58.25px -260px,
+    border-radius: 30px;
+    background: url("svg/loanpic.svg") no-repeat 250px -35px,
     linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
-  }
+    background-size: cover;
+}
 
   .description__info{
     font-weight: 400;
@@ -1411,7 +1399,6 @@ header {
 
   .right__logo{
   position: absolute;
-  left: 108px;
   z-index: -1;
   }
 
@@ -1432,11 +1419,47 @@ header {
     max-width: 100%;
   }
 
+  .loan__number{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+  }
+
 
 }
 
 @media screen and (min-width:320px) and (max-width:767px){
   
+  .slick-dots{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .slick-dots li{
+    list-style: none;
+  }
+
+  .slick-dots button{
+    font-size: 0;
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+.slick-slider .slick-dots  li.slick-active button {
+    width: 10px;
+    height: 10px;
+    background-color: #17FF01;
+  }
+
+  .requirements{
+    margin-bottom: 50px;
+  }
+
   body h2{
     font-size: 20px;
   }
@@ -1548,10 +1571,6 @@ header {
     line-height: 140%;
   }
 
-  .container__flex{
-    display: inline;
-  }
-
   .logos{
     display: inline;
   }
@@ -1612,12 +1631,6 @@ header {
     max-width: 219px;
   }
 
-
-  .loan,
-  .loan__program{
-    height: 193px;
-  }
-
   .loan {
     margin-bottom: 20px;
   }
@@ -1663,6 +1676,10 @@ header {
 
   .preferential__loan{
     margin-bottom: 30px;
+  }
+
+  .loan__logos{
+    justify-content: flex-start;
   }
 
   .startup{
@@ -1816,7 +1833,6 @@ header {
   }
 
   .selection{
-    min-height: 473px;
     margin-bottom: 20px;
   }
 
@@ -1955,4 +1971,272 @@ header {
     overflow: hidden;
   }
 
+  .container__flex{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .msp__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .msc__back{
+    margin-bottom: 0px;
+  }
+
+  .msp__bank,
+  .msk__gov{
+    gap: 16px;
+  }
+
+}
+
+@media screen and (min-width: 991px) and (max-width:1024px) {
+  .header{
+    padding: 15px;
+  }
+
+  .main__nav{
+    padding: 0 15px;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+
+  .main__nav ul {
+    max-width: 1200px;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .main__nav nav{
+    gap: 15px;
+  }
+
+  .investments{
+    padding: 50px;
+  }
+
+  .credit__info{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .investments__pic {
+    background: url("svg/inv.svg") no-repeat;
+    position: absolute;
+    width: 567px;
+    height: 500px;
+    bottom: 0;
+    right: -140px;
+  }
+
+  .preferential__loan{
+    padding: 15px;
+  }
+
+  .loan{
+    max-width: 370px;
+  }
+
+  .loan__program{
+    padding: 20px;
+  }
+
+  .loan__about__procent{
+    padding-top: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .loan__program h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    max-width: 200px;
+  }
+
+  .number,
+  .logos__description{
+    font-size: 16px;
+  }
+
+  .numbers__loan{
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .procent__pic{
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+  }
+
+  .preferential__loan{
+    margin-bottom: 60px;
+  }
+
+  .startup{
+    padding: 0 15px;
+    margin-bottom: 60px;
+  }
+
+  .header__info{
+    font-size: 32px;
+  }
+
+  .startup__background{
+    padding: 50px;
+  }
+
+  .startup__description{
+    font-size: 30px;
+  }
+
+  .more__startup{
+    padding: 0 15px;
+    margin-bottom: 60px;
+  }
+
+  .requirements{
+    padding: 0 15px;
+    margin-bottom: 60px;
+  }
+
+  .selection{
+    padding: 0 15px;
+    margin-bottom: 60px;
+  }
+
+  .selection__header h2{
+    font-size: 30px;
+  }
+
+  .selection__header {
+    align-items: center;
+  }
+
+  .list__item h5 {
+    font-size: 16px;
+  }
+
+  .header__text{
+    font-size: 20px;
+  }
+
+  .msp__header h4{
+    font-size: 20px;
+  }
+
+  .msp__header{
+    width: 300px;
+  }
+
+  .loan__section{
+    padding: 0 15px;
+    margin-bottom: 60px;
+  }
+
+  .get__loan{
+    gap: 20px;
+  }
+
+  .questions{
+    padding: 0 15px;
+  }
+
+  .gradient{
+    font-size: 30px;
+  }
+
+  .get__loan__info h4{
+    margin-bottom: 10px;
+  }
+
+  .footer{
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1240px) {
+  .header{
+    padding: 20px;
+  }
+
+  .main__nav{
+    gap: 10px;
+    padding: 0 20px;
+    white-space: nowrap;
+  }
+
+  .main__nav ul{
+    overflow-x: scroll;
+  }
+
+  .investments{
+    padding: 50px;
+  }
+
+  .main__nav nav {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .search__icon{
+    width: 16px;
+  }
+
+  .investments__pic{
+    width: 428px;
+  }
+
+  .credit__info{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .loan__program {
+    max-width: 400px;
+  }
+
+  .all__loan{
+    margin-right: 20px;
+  }
+
+  .logos{
+    gap: 20px;
+  }
+
+  .startup{
+    padding: 0 20px;
+  }
+
+  .loan__about__procent{
+    width: 350px;
+  }
+
+  .procent__pic {
+    background: url("svg/procent.png") no-repeat;
+    height: 121px;
+    width: 121px;
+    background-size: contain;
+  }
+
+  .selection{
+    margin-bottom: 60px;
+  }
+
+  .more__startup,
+  .requirements,
+  .selection,
+  .preferential__loan,
+  .loan__section,
+  .questions,
+  .footer{
+    padding: 0 20px;
+  }
+
+  .get__loan{
+    gap: 20px;
+  }
 }

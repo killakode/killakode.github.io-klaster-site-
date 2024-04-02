@@ -598,7 +598,6 @@ header {
 .selection__container{
   justify-content: space-between;
   display: flex;
-  align-items: center;
 }
 
 .msc__klaster {
@@ -1701,6 +1700,7 @@ header {
 
   .header__info{
     margin-bottom: 20px;
+    padding: 0 20px;
   }
 
   .description__info{
@@ -1816,7 +1816,8 @@ header {
   }
 
   .list__item{
-    max-width: 280px;
+    width: 100%;
+    max-width: 767px;
     padding: 20px;
   }
 

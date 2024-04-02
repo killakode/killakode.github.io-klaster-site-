@@ -1,7 +1,6 @@
 function initializeSlickSlider() {
   if (!$('.requirements__cards').hasClass('slick-initialized')) {
     $('.requirements__cards').slick({
-      // Настройки Slick Slider
       dots: true,
       slidesToShow: 1,
       slidesToScroll: 1,

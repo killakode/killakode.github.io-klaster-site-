@@ -123,6 +123,7 @@ header {
 
 .main__nav nav{
   display: flex;
+  align-items: center;
 }
 
 .main__nav ul {
@@ -424,11 +425,13 @@ header {
 .startup{
   margin-bottom: 120px;
 }
+
+
 .startup__background {
   border-radius: 60px;
   padding: 60px 80px 60px 80px;
-  background: url("svg/loanpic.svg") no-repeat 244px -184.57px,
-    linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
+  background: url("svg/loanpic.svg") no-repeat 244px -212.57px,
+  linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -581,6 +584,7 @@ header {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 120px;
 }
 
 .selection__header {
@@ -611,6 +615,7 @@ header {
 .msp__klaster {
   border-radius: 30px;
   background: url("svg/mspback.svg") no-repeat 374px -98px;
+  background-size: cover;
   background-color: #bee7ff;
   padding: 40px 50px 40px 40px;
 }
@@ -1127,12 +1132,12 @@ header {
     margin-bottom: 40px;
   }
 
- .startup__background {
+.startup__background {
     padding: 40px 80px 60px 40px;
     border-radius: 30px;
-    background: url("svg/loanpic.svg") no-repeat 250px -35px,
-    linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
-    background-size: cover;
+    background: url("svg/loanpic.svg") no-repeat right -400px  bottom -550px,
+    linear-gradient(22deg, #6260b7 0%, #9379CF 100%);
+    background-size: 900px 1200px;
 }
 
   .description__info{
@@ -1221,6 +1226,15 @@ header {
 
   .msc__klaster{
     padding: 30px;
+    background: url("svg/klasterback.svg") no-repeat right -200px bottom;
+    background-color: #d8fddb;
+    background-size: cover;
+  }
+
+  .msp__klaster {
+    background: url("svg/mspback.svg") no-repeat right -250px bottom -20px;
+    background-size: cover;
+    background-color: #bee7ff;
   }
 
   .msc__left{
@@ -1274,6 +1288,7 @@ header {
 
   .get__loan__info{
     display: flex;
+    gap: 20px;
   }
 
   .get__loan__info h4 {
@@ -1640,9 +1655,11 @@ header {
     font-size: 16px;
     line-height: 112%;
     margin-bottom: 20px;
+    max-width: 194px;
   }
 
   .procent__pic{
+    top: -35px;
     width: 102px;
     height: 107px;
     background-size: contain;
@@ -1662,6 +1679,7 @@ header {
   .loan__spending__logos{
     flex-direction: column;
     gap: 16px;
+    margin: 0 auto;
   }
 
   .circle{
@@ -1684,11 +1702,6 @@ header {
   .startup{
     padding: 30px 20px 0 20px;
     margin-bottom: 30px;
-  }
-
-  .startup__background{
-    padding: 30px 20px 40px 20px;
-     border-radius: 30px;
   }
 
   .startup__description{
@@ -1743,6 +1756,7 @@ header {
 
   .card{
     padding: 24px 20px;
+    max-width: 100%;
   }
 
   .card__pic{
@@ -1792,6 +1806,9 @@ header {
     padding: 30px 20px 20px 20px;
     border-radius: 30px;
     flex-direction: column;
+    background: url(svg/klasterback.svg) no-repeat left -456px bottom -165px,
+    #d8fddb;
+    background-size: 1214px 847px;
   }
 
   .header__text {
@@ -1802,7 +1819,8 @@ header {
   }
 
   .selection__number{
-    width: 43px;
+    max-width: 43px;
+    width: 100%;
     height: 43px;
   }
 
@@ -1825,7 +1843,21 @@ header {
     flex-direction: column;
     padding: 30px 20px 20px 20px;
     align-items: flex-start;
+    background: url(svg/mspback.svg) no-repeat left 171px bottom 105px;
+    background-color: #bee7ff;
+    background-size: 934px 465px;
   }
+
+
+
+  .startup__background{
+    border-radius: 30px;
+    padding: 30px 20px 40px 20px;
+    background: url("svg/loanpic.svg") no-repeat left bottom,
+      linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
+    background-size: cover;
+  }
+
 
   .msp__header h4{
     font-weight: 500;
@@ -1895,6 +1927,7 @@ header {
 
   .questions__back{
     padding: 30px 20px 40px 20px;
+    background: #383B4A url("svg/questionsback.svg") no-repeat right -250px bottom;
   }
 
   .question__footer{
@@ -2157,6 +2190,12 @@ header {
   .footer{
     padding: 0 15px;
   }
+
+  .startup__background {
+    background: url("svg/loanpic.svg") no-repeat right -300px bottom -450px,
+  linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
+    background-size: 1000px 1000px;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1240px) {
@@ -2239,5 +2278,40 @@ header {
 
   .get__loan{
     gap: 20px;
+  }
+
+  .startup__background {
+    background: url("svg/loanpic.svg") no-repeat right -400px bottom -600px,
+  linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
+    background-size: 1200px 1200px;
+  }
+
+  .msc__klaster {
+    background: url("svg/klasterback.svg") no-repeat right -325px bottom;
+    background-color: #D8FDDC;
+    background-size: cover;
+  }
+
+  .msp__klaster {
+    background: url("svg/mspback.svg") no-repeat right -325px bottom;
+    background-color: #bee7ff;
+  }
+}
+
+@media screen and (min-width: 1241px) and (max-width: 1399px) {
+  .investments__pic {
+    width: 515px;
+  }
+
+  .header,
+  .main__nav,
+  .more__startup,
+  .requirements,
+  .selection,
+  .preferential__loan,
+  .loan__section,
+  .questions,
+  .footer{
+    padding: 0 20px;
   }
 }

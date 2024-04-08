@@ -8,7 +8,33 @@
 }
 
 /*-------HEADER-------*/
-  
+
+
+.plus{
+  position: absolute;
+  top: -32px;
+  left: -32px;
+}
+
+span {
+  display: block;
+}
+
+.tablet {
+  display: inline;
+} 
+
+.mobile {
+  display: inline;
+}
+
+.lg {
+  display: inline;
+}
+
+.landscape{
+  display: inline;
+}
 
 body h2 {
   font-size: 40px;
@@ -36,6 +62,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1240px;
   width: 100%;
   margin-right: auto;
@@ -62,6 +89,42 @@ body {
   display: flex;
   align-items: center;
   margin-right: auto;
+  color: #A1A3A6;
+}
+
+.divider::after{
+  content: "|";
+  padding-left: 20px;
+  margin-right: 20px;
+  color: #cbcbce;
+}
+
+.main__nav__item {
+  position: relative;
+}
+
+.main__nav__item.active{
+  color: red;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__item.active{
+  color: black;
+}
+
+.menu__item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -21px;
+    left: calc(100%/2);
+    width: 15%;
+    height: 2px;
+    background: linear-gradient(90deg, #16ff00 0%, #4dffc9 100%, #4dffc9 100%);
+    display: block; 
 }
 
 .header__nav-right li:not(:last-child) {
@@ -77,12 +140,6 @@ body {
   display: flex;
 }
 
-.header__nav-left li:not(:last-child)::after {
-  content: "|";
-  padding-left: 20px;
-  margin-right: 20px;
-  color: #cbcbce;
-}
 
 .header__nav-right ul {
   display: flex;
@@ -228,6 +285,7 @@ header {
   margin-bottom: 120px;
 }
 .container__flex {
+  position: relative;
   max-width: 1240px;
   margin-right: auto;
   margin-left: auto;
@@ -241,7 +299,7 @@ header {
 }
 
 .more__about__loan {
-  max-width: 560px;
+  max-width: 638px;
   width: 100%;
   margin-bottom: 31px;
   font-size: 18px;
@@ -278,6 +336,8 @@ header {
   flex-direction: column;
 }
 
+
+
 .msp__logo,
 .msk__logo {
   margin: auto;
@@ -288,8 +348,16 @@ header {
 
 .loan,
 .loan__program {
+  width: 100%;
   max-width: 506px;
   position: relative;
+}
+
+.requirements__card__header{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 8px;
 }
 
 .loan__program {
@@ -563,6 +631,7 @@ header {
 
 .requirements__cards h5 {
   line-height: 120%;
+  font-size: 16px;
 }
 
 .requirements__card  {
@@ -573,6 +642,10 @@ header {
   margin-bottom: 20px;
 }
 
+.third__floor{
+  margin-bottom: 0px;
+}
+
 
 .requirements__pics {
   height: 70px;
@@ -580,6 +653,7 @@ header {
   margin-bottom: 20px;
 }
 .selection{
+  position: relative;
   max-width: 1240px;
   width: 100%;
   margin-right: auto;
@@ -588,6 +662,7 @@ header {
 }
 
 .selection__header {
+  justify-content: space-between;
   display: flex;
   align-items: flex-end;
   margin-bottom: 40px;
@@ -752,9 +827,10 @@ header {
 
 .questions__back {
   border-radius: 20px;
-  background: #383B4A url("svg/questionsback.svg") no-repeat;
+  background: #383B4A url("svg/questionsback.svg") no-repeat right -250px bottom;
   padding: 40px 60px 50px 60px;
   color: #fff;
+  background-size: cover;
 }
 
 .question__header {
@@ -901,7 +977,7 @@ header {
 
 .business__block{
   display: flex;
-  max-width: 515px;
+  max-width: 50%;
   width: 100%;
   justify-content: space-between;
 }
@@ -951,6 +1027,24 @@ header {
 
 @media screen and (min-width:768px) and (max-width:990px) {
 
+  .plus{
+    display: none;
+  }
+
+  .loan__description {
+  margin-bottom: 20px;
+  width: 100vw;
+  }
+
+
+  span{
+    display: inline;
+  }
+
+  .tablet {
+    display: block;
+  }
+
    .logo{
     background: url("svg/logo.svg") no-repeat;
     width: 140px;
@@ -961,6 +1055,7 @@ header {
 
   .container__flex{
     margin-bottom: 40px;
+    position: relative;
   }
 
   body h2{
@@ -1135,18 +1230,20 @@ header {
 .startup__background {
     padding: 40px 80px 60px 40px;
     border-radius: 30px;
-    background: url("svg/loanpic.svg") no-repeat right -400px  bottom -550px,
+    background: url("svg/loanpic.svg") no-repeat right -393px  bottom -586px,
     linear-gradient(22deg, #6260b7 0%, #9379CF 100%);
-    background-size: 900px 1200px;
+    background-size: 1020px 1210px;
 }
 
   .description__info{
+    width: 514px;
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
   }
 
   .startup__addition{
+    max-width: 425px;
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
@@ -1200,11 +1297,12 @@ header {
 
   .requirements{
     padding: 40px 32px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   .requirements__cards h5{
     font-size: 14px;
+    font-weight: 400;  
   }
 
   .requirements__card{
@@ -1232,9 +1330,14 @@ header {
   }
 
   .msp__klaster {
-    background: url("svg/mspback.svg") no-repeat right -250px bottom -20px;
+    background: url("svg/mspback.svg") no-repeat right -370px bottom 0px;
     background-size: cover;
     background-color: #bee7ff;
+    padding: 30px;
+  }
+
+  .msp__logo{
+    width: 35.5px;
   }
 
   .msc__left{
@@ -1291,9 +1394,13 @@ header {
     gap: 20px;
   }
 
+
   .get__loan__info h4 {
-    max-width: 180px;
+    max-width: 174px;
+    width: 100%;
   }
+
+
   .get__loan{
     flex-direction: column;
     gap: 34px;
@@ -1387,6 +1494,18 @@ header {
 
   .loan{
     max-width: 286px;
+    position: absolute;
+    right: 0;
+  }
+
+  .requirements__card__header{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .requirements__card__description{
+    width: 200px;
   }
 
   .procent__pic {
@@ -1409,6 +1528,12 @@ header {
 
   .list__item{
     max-width: 100%;
+  }
+
+  .list__item h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
   }
 
   .right__logo{
@@ -1443,7 +1568,27 @@ header {
 }
 
 @media screen and (min-width:320px) and (max-width:767px){
-  
+
+  .plus{
+    display: none;
+  }
+
+  .msp__logo{
+    width: 35.5px;
+  }
+
+  span{
+    display: inline;
+  }
+
+  .tablet{
+    display: inline;
+  }
+
+  .mobile{
+    display: block;
+  }
+
   .slick-dots{
     gap: 20px;
     display: flex;
@@ -1622,6 +1767,7 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
+    width: 156px;
   }
 
   .msk__gov{
@@ -1643,10 +1789,7 @@ header {
   .loan__about__procent{
     padding-top: 0;
     max-width: 219px;
-  }
-
-  .loan {
-    margin-bottom: 20px;
+    gap: 20px;
   }
 
 
@@ -1679,7 +1822,7 @@ header {
   .loan__spending__logos{
     flex-direction: column;
     gap: 16px;
-    margin: 0 auto;
+
   }
 
   .circle{
@@ -1712,8 +1855,8 @@ header {
   }
 
   .header__info{
-    margin-bottom: 20px;
     padding: 0 20px;
+    margin-bottom: 20px;
   }
 
   .description__info{
@@ -1839,6 +1982,12 @@ header {
     padding: 20px;
   }
 
+  .list__item h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
   .msp__klaster{
     flex-direction: column;
     padding: 30px 20px 20px 20px;
@@ -1850,14 +1999,17 @@ header {
 
 
 
-  .startup__background{
+.startup__background {
     border-radius: 30px;
     padding: 30px 20px 40px 20px;
-    background: url("svg/loanpic.svg") no-repeat left bottom,
+    background: url("svg/mobile.svg") no-repeat left calc(100% - -401px) top calc(100% - -229px),
       linear-gradient(22deg, #6260b7 0%, #9379cf 100%);
-    background-size: cover;
-  }
+}
 
+
+.numbers__loan{
+  font-size: 30px;
+}
 
   .msp__header h4{
     font-weight: 500;
@@ -1888,6 +2040,10 @@ header {
     font-size: 14px;
     line-height: 120%;
     margin-bottom: 4px;
+  }
+
+  .loan__header{
+    padding: 6.5px 0;
   }
 
   .card__number{
@@ -1927,7 +2083,9 @@ header {
 
   .questions__back{
     padding: 30px 20px 40px 20px;
-    background: #383B4A url("svg/questionsback.svg") no-repeat right -250px bottom;
+    background: #383B4A url("svg/questionsback.svg") no-repeat right -300px bottom;
+    background-size: cover;
+
   }
 
   .question__footer{
@@ -2028,6 +2186,49 @@ header {
 }
 
 @media screen and (min-width: 991px) and (max-width:1024px) {
+
+  .plus{
+    display: none;
+  }
+
+  .stages{
+    width: 316px  ;
+  }
+
+  .loan__footer h3{
+    margin-bottom: 10px;
+  }
+
+    .circle{
+    max-width: 70px;
+    height: 70px;
+  }
+
+  .logos__loan{
+    width: 40px;
+  }
+
+    span{
+    display: inline;
+  }
+
+  .tablet{
+    display: inline;
+  }
+
+  .mobile{
+    display: inline;
+  }
+
+  .lg{
+    display: inline;
+  }
+
+  .landscape{
+    display: block;
+  }
+
+
   .header{
     padding: 15px;
   }
@@ -2199,6 +2400,52 @@ header {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1240px) {
+
+  .plus{
+    display: none;
+  }
+
+  .loan__footer h3{
+    margin-bottom: 15px;
+  }
+
+  .circle{
+    max-width: 70px;
+    height: 70px;
+  }
+
+  .logos__loan{
+    width: 40px;
+  }
+
+  .gradient{
+    font-size: 30px;
+  }
+
+  .msp__header h4{
+    width: 198px;
+  }
+
+  .stages{
+    width: 400px;
+  }
+
+  span{
+    display: inline;
+  }
+
+  .tablet{
+    display: inline;
+  }
+
+  .mobile{
+    display: inline;
+  }
+
+  .lg{
+    display: block;
+  }
+
   .header{
     padding: 20px;
   }
@@ -2299,6 +2546,11 @@ header {
 }
 
 @media screen and (min-width: 1241px) and (max-width: 1399px) {
+
+  .plus{
+    display: none;
+  }
+
   .investments__pic {
     width: 515px;
   }

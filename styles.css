@@ -196,8 +196,12 @@ header {
   border: 1px solid transparent;
   background: linear-gradient(#fff, #fff) padding-box,
   linear-gradient(to bottom right, #16ff00, #4dffc9);
-  border-radius: 23px;
+  border-radius: 70px;
   padding: 8px 13px;
+}
+
+.selection__header h2 {
+  margin-bottom: 0;
 }
 
 .authorization{

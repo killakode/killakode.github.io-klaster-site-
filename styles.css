@@ -1290,7 +1290,8 @@ header {
   }
 
   .more__startup{
-    padding: 40px 32px;
+    padding: 40px 32px 0 32px;
+    margin-bottom: 50px;
   }
 
   .header__info{
@@ -1326,9 +1327,6 @@ header {
     font-size: 24px;
   }
 
-  .more__startup{
-    margin-bottom: 50px;
-  }
 
   .requirements{
     padding: 40px 32px;

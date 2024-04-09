@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "TT Firs Neue Medium";
+  font-family: "TT Firs Neue";
   src: local("TT Firs Neue Medium"), local("TT-Firs-Neue-Medium"),
     url("TTFirsNeue-Medium/TTFirsNeue-Medium.woff2") format("woff2"),
     url("TTFirsNeue-Medium/TTFirsNeue-Medium.woff") format("woff"),
@@ -7,8 +7,43 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: local('TT Firs Neue Regular'), local('TT-Firs-Neue-Regular'),
+        url('TTFirsNeue-Regular/TTFirsNeue-Regular.woff2') format('woff2'),
+        url('TTFirsNeue-Regular/TTFirsNeue-Regular.woff') format('woff'),
+        url('TTFirsNeue-Regular/TTFirsNeue-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'TT Firs Neue';
+    src: local('TT Firs Neue Demi Bold'), local('TT-Firs-Neue-Demi-Bold'),
+        url('TTFirsNeue-DemiBold/TTFirsNeue-DemiBold.woff2') format('woff2'),
+        url('TTFirsNeue-DemiBold/TTFirsNeue-DemiBold.woff') format('woff'),
+        url('TTFirsNeue-DemiBold/TTFirsNeue-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
 /*-------HEADER-------*/
 
+
+.header__text{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  width: 350px;
+}
+
+.mobile__menu{
+  display: none;
+}
 
 .plus{
   position: absolute;
@@ -58,7 +93,7 @@ body h6 {
   font-size: 16px;
 }
 body {
-  font-family: "TT Firs Neue Medium", sans-serif;
+  font-family: "TT Firs Neue", sans-serif;
 }
 
 .container {
@@ -127,8 +162,8 @@ body {
     display: block; 
 }
 
-.header__nav-right li:not(:last-child) {
-  margin-right: 70px;
+.header__nav-right ul {
+    gap: 70px;
 }
 
 .user__logo {
@@ -366,7 +401,6 @@ header {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 
@@ -669,6 +703,7 @@ header {
 }
 
 .stages{
+  padding: 14px 24px;
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
@@ -1033,7 +1068,7 @@ header {
 
   .loan__description {
   margin-bottom: 20px;
-  width: 100vw;
+  width: 90vw;
   }
 
 
@@ -1075,9 +1110,7 @@ header {
     justify-content: normal;
   }
 
-  .header__nav-right li:not(:last-child){
-    margin-right: 103px;
-  }
+
 
   .header li, .main__nav li{
     font-size:12px;
@@ -1089,13 +1122,6 @@ header {
 
   .user__logo{
     padding-left: 0;
-  }
-
-  .header__nav-left li:not(:last-child)::after{
-    content: "|";
-    padding-left: 10px;
-    margin-right: 10px;
-    color: #cbcbce;
   }
 
   .main__nav {
@@ -1145,8 +1171,8 @@ header {
   }
 
   .preferential__loan{
-    padding: 40px 32px;
-    margin-bottom: 40px;
+    padding: 40px 32px 0 32px;
+    margin-bottom: 81px;
   }
 
   .more__about__loan{
@@ -1185,7 +1211,6 @@ header {
   .msk__gov{
     flex-direction: row;
     max-width: 389px;
-    margin-bottom: 20px;
   }
 
   .loan__about__procent{
@@ -1194,7 +1219,13 @@ header {
 
   .msc__back {
     margin-right: 20px;
+    margin-bottom: 0;
   }
+
+  .all__loan{
+    margin-bottom: 0;
+  }
+
   .loan__footer{
     padding: 40px 30px;
   }
@@ -1223,7 +1254,7 @@ header {
   }
 
   .startup{
-    padding: 40px 32px;
+    padding: 40px 32px 0 32px;
     margin-bottom: 40px;
   }
 
@@ -1337,7 +1368,7 @@ header {
   }
 
   .msp__logo{
-    width: 35.5px;
+    width: 60px;
   }
 
   .msc__left{
@@ -1379,6 +1410,7 @@ header {
   }
 
   .stages{
+    padding: 14px 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 120%;
@@ -1386,7 +1418,13 @@ header {
 
   .loan__section{
     padding: 40px 32px 0 32px;
+  }
 
+  .header__text{
+    width: 522px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
   }
 
   .get__loan__info{
@@ -1564,6 +1602,9 @@ header {
     line-height: 110%;
   }
 
+  .klaster{
+    display: none;
+  }
 
 }
 
@@ -1689,12 +1730,14 @@ header {
     background-size: contain;
   }
 
-  .header__nav-right::after{
-    content: attr(href);
-    background: url("svg/headermenu.svg") no-repeat;
-    margin-left: 10px;
+  .mobile__menu__logo{
     width: 16px;
     height: 12px;
+    display: flex;
+  }
+
+  .klaster{
+    display: none;
   }
 
   .header__nav-left ul {
@@ -1702,7 +1745,11 @@ header {
   }
 
   .header__nav-right li:not(:last-child){
-    display: none;
+    margin-right: 20px;
+  }
+
+  .mobile__menu{
+    padding: 4px 2px  ;
   }
 
   .user__text{

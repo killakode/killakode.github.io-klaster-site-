@@ -146,7 +146,6 @@ body {
   align-items: center;
   margin-right: auto;
   color: #A1A3A6;
-  padding-left: 5px;
 }
 
 .divider::after{
@@ -173,9 +172,6 @@ body {
   color: black;
 }
 
-.header__nav-right{
-  padding-right: 5px;
-}
 
 .klaster{
   padding-top: 4px;
@@ -249,8 +245,7 @@ header {
 
 .main__nav nav{
   display: flex;
-  align-items: center;
-  padding-left: 5px;
+  align-items: center; 
 }
 
 .main__nav ul {
@@ -1208,7 +1203,6 @@ header {
 
   .header__nav-left{
     padding-left: 16px;
-    margin-right: 19px;
   }
 
   .header__nav-right ul{
@@ -1274,7 +1268,7 @@ header {
   }
   
   .header{
-    padding: 18px 20px;
+    padding: 18px 27px 20px 18px;
     justify-content: normal;
   }
 
@@ -3223,7 +3217,7 @@ header {
   }
 
   .menu__item.active::after{
-    bottom: -11px;
+    bottom: -21px;
   }
 
   .startup__header{
@@ -3242,7 +3236,10 @@ header {
     padding: 16px 20px;
   }
 
-  .header,
+  .header{
+    padding: 10px 20px;
+  }
+
   .more__startup,
   .requirements,
   .selection,

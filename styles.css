@@ -134,6 +134,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 15px 100px;
+  max-width: 1440px;
 }
 
 .header__nav-left ul{
@@ -241,6 +242,7 @@ header {
 /*-------------MAIN-NAVIGATION-------------*/
 
 .main__nav{
+  max-width: 1440px;
   margin: 0 auto;
   padding: 16px 100px;
 }

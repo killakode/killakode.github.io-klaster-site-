@@ -3197,11 +3197,15 @@ header {
 @media screen and (min-width: 1241px) and (max-width: 1399px) {
 
   .header__info{
-    padding: 0 20px;
+    padding: 0 20px ;
   }
 
   .menu__item.active::after{
     bottom: -11px;
+  }
+
+  .startup__header{
+    padding: 0;
   }
 
   .plus{

@@ -768,7 +768,7 @@ header {
 
 
 .second__floor{
-  padding: 28px 30px 30px 30px;
+  padding: 28px 30px 8px 30px;
 }
 
 
@@ -1438,12 +1438,17 @@ header {
 
   .loan__logos__last{
     display: flex;
-    gap: 18px;
+    gap: 16px;
     align-items: center;
   }
 
   .loan__logos{
     gap: 15px;
+    margin-right: 3px;
+  }
+
+  .last__circle{
+    margin-right: 0;
   }
 
   .loan__logos__first{
@@ -2507,7 +2512,7 @@ header {
 
   .loan__section{
     padding: 30px 20px 0 20px;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
 
   .question__header h4 ::before{
@@ -2737,6 +2742,34 @@ header {
 
 @media screen and (min-width: 991px) and (max-width:1024px) {
 
+  .footer__contacts{
+    margin-right: 0px;
+  }
+
+  .business__block{
+    margin-right: 0px;
+    gap: 8  0px;
+  }
+
+  .footer__cards{
+    justify-content: space-between;
+  }
+
+  .card__number{
+    height: 50px;
+    width: 50px;
+  }
+
+  .get__loan__card::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: -40px;
+    border-top: 1px dotted black;
+    z-index: -1;
+}
+
   .menu__item.active::after{
     bottom: -26px;
   }
@@ -2746,7 +2779,12 @@ header {
   }
 
   .stages{
-    width: 316px  ;
+    width: 316px;
+    font-size: 22px ;
+  }
+
+  .loan__card__description{
+    font-size: 15px;
   }
 
   .loan__footer h3{
@@ -2788,7 +2826,7 @@ header {
   }
 
   .main__nav{
-    padding: 0 15px;
+    padding: 15px 15px;
     white-space: nowrap;
     overflow-x: scroll;
   }
@@ -2831,6 +2869,7 @@ header {
 
   .loan__program{
     padding: 20px;
+    width: 320px;
   }
 
   .loan__about__procent{
@@ -2967,9 +3006,53 @@ header {
     margin-bottom: 15px;
   }
 
+  .card__number {
+    border-radius: 100%;
+    background: #16ff00;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-bottom: 19px;
+  }
+
+  .get__loan__card::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: -40px;
+    border-top: 1px dotted black;
+    z-index: -1;
+  }
+
+  .loan__number{
+    font-size: 24px;
+  }
+
   .circle{
-    max-width: 70px;
+    min-width: 70px;
     height: 70px;
+  }
+
+  .footer__cards{
+    justify-content: space-between;
+  }
+
+  .business__block{
+    margin-right: 0;
+    gap: 100px;
+  }
+
+  .footer__contacts{
+    margin-right: 0;
+  }
+
+  .loan__spending__logos{
+    gap: 50px;
+  }
+
+  .loan__card__description{
+    font-size: 15px;
   }
 
   .logos__loan{
@@ -3010,9 +3093,12 @@ header {
     padding: 20px;
   }
 
+  .loan__procent{
+    margin-right: 0;
+  }
+
   .main__nav{
-    gap: 10px;
-    padding: 0 20px;
+    padding: 15px 20px;
     white-space: nowrap;
   }
 
@@ -3043,7 +3129,7 @@ header {
   }
 
   .loan__program {
-    max-width: 400px;
+    max-width: 390px;
   }
 
   .all__loan{
@@ -3051,7 +3137,8 @@ header {
   }
 
   .logos{
-    gap: 20px;
+    gap: 40px;
+    justify-content: normal;
   }
 
   .startup{

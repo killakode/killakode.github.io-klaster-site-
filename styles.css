@@ -1184,7 +1184,13 @@ header {
 
 @media screen and (min-width:768px) and (max-width:990px) {
 
-
+  .questions__back {
+    border-radius: 20px;
+    background: #383B4A url("svg/questionsback.svg") no-repeat right -355px bottom;
+    padding: 45px 60px 50px 60px;
+    color: #fff;
+    background-size: cover;
+}
 
 
 
@@ -2743,6 +2749,14 @@ header {
 
 @media screen and (min-width: 991px) and (max-width:1024px) {
 
+  .questions__back {
+    border-radius: 20px;
+    background: #383B4A url("svg/questionsback.svg") no-repeat right -200px bottom;
+    padding: 45px 60px 50px 60px;
+    color: #fff;
+    background-size: cover;
+}
+
   .footer__contacts{
     margin-right: 0px;
   }
@@ -2994,6 +3008,15 @@ header {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1240px) {
+
+
+  .questions__back {
+    border-radius: 20px;
+    background: #383B4A url("svg/questionsback.svg") no-repeat right -250px bottom;
+    padding: 45px 60px 50px 60px;
+    color: #fff;
+    background-size: cover;
+}
 
   .menu__item.active::after{
     bottom: -31px;

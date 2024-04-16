@@ -2848,11 +2848,11 @@ header {
 
 
   .header{
-    padding: 15px;
+    padding: 15px 50px;
   }
 
   .main__nav{
-    padding: 15px 15px;
+    padding: 15px 50px;
     white-space: nowrap;
     overflow-x: scroll;
   }
@@ -3125,7 +3125,7 @@ header {
   }
 
   .header{
-    padding: 20px;
+    padding: 20px 50px  ;
   }
 
   .loan__procent{
@@ -3133,7 +3133,7 @@ header {
   }
 
   .main__nav{
-    padding: 15px 20px;
+    padding: 15px 50px;
     white-space: nowrap;
   }
 
@@ -3249,12 +3249,16 @@ header {
     width: 515px;
   }
 
-  .main__nav{
-    padding: 16px 20px;
+  .main__nav ul{
+    gap: 27px;
+  }
+
+  .main__nav {
+      padding: 16px 75px 16px 80px;
   }
 
   .header{
-    padding: 10px 20px;
+    padding: 10px 75px 10px 80px;
   }
 
   .more__startup,

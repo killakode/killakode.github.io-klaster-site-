@@ -1203,10 +1203,11 @@ header {
 
   .header__nav-left{
     padding-left: 16px;
+    margin-right: 22px;
   }
 
-  .header__nav-right ul{
-    gap: 122px  ;
+  .header__nav-right{
+    width: 100%;
   }
 
   .lom__wrapper {
@@ -1268,8 +1269,12 @@ header {
   }
   
   .header{
-    padding: 18px 27px 20px 18px;
+    padding: 18px 32px 20px 18px;
     justify-content: normal;
+  }
+
+  .klaster{
+    margin-right: auto;
   }
 
 

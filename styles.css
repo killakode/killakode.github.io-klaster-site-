@@ -65,7 +65,7 @@ span {
   display: inline;
 } 
 
-.mobile {
+.mobile__break {
   display: inline;
 }
 
@@ -81,6 +81,8 @@ span {
 
   margin-bottom: 28px;
 }
+
+
 
 body h2 {
   font-size: 40px;
@@ -366,15 +368,25 @@ header {
 /*-------MAIN-LOAN---------*/
 
 .all__loan {
+  margin-right: 94px;
   margin-bottom: 10px;
 }
 
+
+
 .preferential__loan{
+  max-width: 1240px;
+  width: 100%;
+  margin:0 auto;
   margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 .container__flex {
   position: relative;
   max-width: 1240px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -382,9 +394,9 @@ header {
   margin-bottom: 60px;
 }
 
+
 .loan__description {
   line-height: 110%;
-  width: 818px;
   margin-bottom: 20px;
 }
 
@@ -451,10 +463,8 @@ header {
 }
 
 .loan__program {
-  top: -226px;
   right: 0;
   width: 506px;
-  position: absolute;
   background-color: #f8f8f8;
   border-radius: 20px;
   padding: 40px;
@@ -464,13 +474,13 @@ header {
 }
 
 .procent__pic {
-  background: url("svg/procent.png") no-repeat;
-  height: 156px;
-  width: 151px;
-  position: absolute;
-  right: 18px;
-  top: -285px;
-  z-index: 1;
+    background: url("svg/procent.png") no-repeat;
+    height: 156px;
+    width: 151px;
+    position: absolute;
+    right: 0px;
+    top: -73px;
+    z-index: 1;
 }
 
 .ellipse {
@@ -1229,7 +1239,7 @@ header {
 
   .loan__description {
   margin-bottom: 20px;
-  width: 90vw;
+  padding: 0;
   }
 
 
@@ -1379,8 +1389,6 @@ header {
     padding: 30px 40px 40px 30px;
     width: 286px;
     height: 203px;
-    top: -203px;
-    right: -4px;
   }
 
   .number{
@@ -1414,6 +1422,7 @@ header {
 
   .all__loan{
     margin-bottom: 0;
+    margin-right: 0;
   }
 
   .loan__footer{
@@ -1841,7 +1850,7 @@ header {
     width: 82px;
     background-size: contain;
     right: 8px;
-    top: -234px;
+    top: -33px;
   }
 
   .loan__program h4{
@@ -1988,7 +1997,7 @@ header {
   }
 
   .loan__description{
-    width: 280px;
+    padding: 0;
   }
 
   .credit__info h5 {
@@ -2031,7 +2040,7 @@ header {
     display: inline;
   }
 
-  .mobile{
+  .mobile__break{
     display: block;
   }
 
@@ -2238,6 +2247,7 @@ header {
 
   .all__loan{
     margin-bottom: 40px;
+    margin-right: 0;
   }
 
   .loan__program{
@@ -2764,6 +2774,14 @@ header {
 
 @media screen and (min-width: 991px) and (max-width:1024px) {
 
+  .loan__description{
+    padding: 0;
+  }
+
+  .all__loan{
+    margin-right: 50px;
+  }
+
   .questions__back {
     border-radius: 20px;
     background: #383B4A url("svg/questionsback.svg") no-repeat right -200px bottom;
@@ -2838,7 +2856,7 @@ header {
     display: inline;
   }
 
-  .mobile{
+  .mobile__break{
     display: inline;
   }
 
@@ -2899,7 +2917,7 @@ header {
 
   .loan__program{
     padding: 20px;
-    width: 320px;
+    max-width: 370px;
   }
 
   .loan__about__procent{
@@ -3024,6 +3042,10 @@ header {
 
 @media screen and (min-width: 1025px) and (max-width: 1240px) {
 
+  .loan__description {
+    padding: 0;
+  }
+
 
   .questions__back {
     border-radius: 20px;
@@ -3120,7 +3142,7 @@ header {
     display: inline;
   }
 
-  .mobile{
+  .mobile__break{
     display: inline;
   }
 
@@ -3168,7 +3190,7 @@ header {
   }
 
   .loan__program {
-    max-width: 390px;
+    max-width: 506px;
   }
 
   .all__loan{
@@ -3232,6 +3254,14 @@ header {
 }
 
 @media screen and (min-width: 1241px) and (max-width: 1399px) {
+
+  .loan__card__description{
+    font-size: 15px;
+  }
+
+  .loan__description{
+    padding: 0px;
+  }
 
   .header__info{
     padding: 0 20px ;

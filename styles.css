@@ -197,6 +197,7 @@ body {
 }
 
 .user__logo {
+  min-width: 18px;
   padding-left: 10px;
 }
 
@@ -214,7 +215,7 @@ body {
 .search__icon {
   display: flex;
   margin-left: auto;
-  height: 14px;
+  min-width: 16px;
 }
 
 header {

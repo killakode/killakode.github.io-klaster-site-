@@ -922,8 +922,6 @@ header {
 .get__loan__card {
   display: flex;
   flex-direction: column;
-  max-width: 280px;
-  width: 100%;
   position: relative;
 
 }

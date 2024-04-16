@@ -2122,6 +2122,7 @@ header {
   }
 
   .credit__links{
+    width: calc(100vw - 15%);
     flex-direction: column;
   }
 
